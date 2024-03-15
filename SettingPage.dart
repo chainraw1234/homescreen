@@ -62,6 +62,30 @@ class SecondRoute extends StatelessWidget {
             widthFactor: 0.9,
             child: Divider(height: 20, color: Colors.grey),
           ),
+          TextButton(
+            style: TextButton.styleFrom(
+              textStyle: const TextStyle(fontSize: 20),
+            ),
+            onPressed: () {
+
+            },
+            child: Row(
+              children: [
+                Icon(Icons.logout),
+                const SizedBox(width: 8),
+                Text("ออกจากระบบ"),
+                Spacer(),
+                Icon(
+                  Icons.arrow_forward,
+                  color: Colors.grey,
+                ),
+              ],
+            ),
+          ),
+          FractionallySizedBox(
+            widthFactor: 0.9,
+            child: Divider(height: 20, color: Colors.grey),
+          ),
         ],
       ),
     );
